@@ -11,3 +11,14 @@ def check(func):
 def div(a, b):
   return a/b
 print(div(10, 0))
+
+
+#print("====================")
+def check(func):
+	def inside():
+		return "hi"
+	return inside
+@check
+def div():
+	return "hello"
+print(div())
