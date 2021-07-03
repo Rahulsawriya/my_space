@@ -22,3 +22,7 @@ with FileManager('test.txt', 'w') as f:
     f.write('Test') 
   
 print(f.closed)
+
+#This with keyword allows you to open a file, do operations on it, and automatically close it after the indented code is executed, in this case, reading from the file. Now, we don’t have to call f.close()! You can only access the file object, f, within this indented block.
+
+
